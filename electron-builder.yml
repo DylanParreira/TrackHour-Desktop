@@ -28,3 +28,4 @@ publish:
   provider: github
   owner: DylanParreira
   repo: TrackHour-Desktop
+  releaseType: release
