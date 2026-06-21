@@ -1,0 +1,28 @@
+{
+  "name": "trackhour-desktop",
+  "version": "1.0.0",
+  "description": "TrackHour Desktop — Client Electron",
+  "main": "src/main.js",
+  "author": {
+    "name": "Dylan PARREIRA",
+    "email": "parreira.dylan@gmail.com"
+  },
+  "homepage": "https://github.com/DylanParreira/ClaudeWork",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^25.1.8"
+  },
+  "allowScripts": {
+    "electron@28.3.3": true
+  }
+}

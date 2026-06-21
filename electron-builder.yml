@@ -1,0 +1,30 @@
+appId: com.applitec.trackhour
+productName: TrackHour
+directories:
+  output: dist
+
+win:
+  target: nsis
+  icon: assets/icon.ico
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: TrackHour
+
+linux:
+  target: AppImage
+  icon: assets/tray-icon.png
+  category: Office
+
+files:
+  - src/**/*
+  - assets/**/*
+  - package.json
+
+publish:
+  provider: github
+  owner: DylanParreira
+  repo: TrackHour-Desktop
